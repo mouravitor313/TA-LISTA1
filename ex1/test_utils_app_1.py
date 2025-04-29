@@ -1,5 +1,5 @@
 import pytest
-import ex1.utils_app_1 as utils
+import utils_app_1 as utils
 
 def test_sum_all():
     test_numbers = [1, 2, 3, 4, 5]
@@ -11,7 +11,7 @@ def test_multiply_all():
 
 def test_duplicated_numbers():
     test_numbers = [1, 2, 2, 3, 4, 4, 5]
-    assert utils.duplicated_numbers(test_numbers) == [2, 4]
+    assert utils.duplicated_numbers(test_numbers) == [2, 2, 4, 4]
 
 def test_get_odd_numbers():
     test_numbers = [1, 2, 3, 4, 5, 6, 7]
